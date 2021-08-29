@@ -1,0 +1,37 @@
+.description {
+    background: #62D0DF;
+
+    &__inner {
+        display: flex;
+        
+    }
+
+    &__wrapper {
+        padding: 150px 0 90px;
+        margin-left: auto;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 27px;
+        color: #fff;    
+        margin-bottom: 80px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 35px;
+        width: 555px;
+        color: #fff;
+    }
+
+    &__text span {
+        font-size: 20px;
+        line-height: 30px;
+        color: #fff;
+    }
+
+    &__box {
+        margin-left: auto;
+    }
+}

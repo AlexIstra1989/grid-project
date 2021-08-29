@@ -1,0 +1,38 @@
+.menu {
+    &__list {
+        display: flex;
+        list-style: none;
+        
+    }
+
+    &__item {
+        margin-right: 20px;
+    }
+
+    &__link {
+        
+    }
+
+    &__btn {
+        font-size: 14px;
+        line-height: 16px;
+        background: #62D0DF;
+        border-radius: 50px;
+        width: 150px;
+        height: 50px;
+        color: #fff;
+        position: relative;
+        z-index: 2222;
+        // &::after {
+        //     position: absolute;
+        //     content: "";
+        //     background-image:url("../images/header-img.jpg");
+        //     background-repeat: no-repeat;
+        //     width: 970px;
+        //     height: 875px;
+        //     left: 0;
+        //     top: 0;
+        // }
+    }
+    
+}
