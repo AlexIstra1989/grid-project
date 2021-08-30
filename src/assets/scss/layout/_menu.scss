@@ -22,17 +22,17 @@
         height: 50px;
         color: #fff;
         position: relative;
-        z-index: 2222;
-        // &::after {
-        //     position: absolute;
-        //     content: "";
-        //     background-image:url("../images/header-img.jpg");
-        //     background-repeat: no-repeat;
-        //     width: 970px;
-        //     height: 875px;
-        //     left: 0;
-        //     top: 0;
-        // }
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url("../images/header-img.png");
+            background-repeat: no-repeat;
+            width: 970px;
+            height: 875px;
+            left: 0;
+            top: 0;
+            
+        }
     }
     
 }

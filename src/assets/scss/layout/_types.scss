@@ -1,0 +1,28 @@
+.types {
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(4, 422px);
+        grid-template-rows: 360px;
+        margin-bottom: 120px;
+        }
+
+        &__item-1 {
+            background: #FFE2DE;
+        }
+
+        &__item-2 {
+            background: #C4E769;
+        }
+
+        &__item-3 {
+            background: #62D0DF;
+        }
+
+        &__item-4 {
+            background: #0052C1;
+        }
+
+}
+
+
+

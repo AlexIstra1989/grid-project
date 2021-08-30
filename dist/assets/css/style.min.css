@@ -16,7 +16,8 @@ html {
   margin: 0;
   box-sizing: border-box;
   color: #22356F;
-  font-family: "larsseit"; }
+  font-family: "larsseit";
+  border: 1px solid red; }
 
 /* Sections
    ========================================================================== */
@@ -313,7 +314,7 @@ template {
   display: none; }
 
 .container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -326,7 +327,7 @@ template {
   font-display: swap; }
 
 .header {
-  background: linear-gradient(to right, #F4F9E2 40%, #fff);
+  background: linear-gradient(to right, #F4F9E2 50%, #fff);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -378,8 +379,16 @@ template {
   width: 150px;
   height: 50px;
   color: #fff;
-  position: relative;
-  z-index: 2222; }
+  position: relative; }
+  .menu__btn::after {
+    position: absolute;
+    content: "";
+    background-image: url("../images/header-img.png");
+    background-repeat: no-repeat;
+    width: 970px;
+    height: 875px;
+    left: 0;
+    top: 0; }
 
 .description {
   background: #62D0DF; }
@@ -422,5 +431,23 @@ template {
   width: 590px;
   letter-spacing: 0.005em;
   font-weight: 700; }
+
+.types__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 422px);
+  grid-template-rows: 360px;
+  margin-bottom: 120px; }
+
+.types__item-1 {
+  background: #FFE2DE; }
+
+.types__item-2 {
+  background: #C4E769; }
+
+.types__item-3 {
+  background: #62D0DF; }
+
+.types__item-4 {
+  background: #0052C1; }
 
 /*# sourceMappingURL=style.min.css.map */
