@@ -15,8 +15,6 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #22356F;
-  font-family: "larsseit";
   border: 1px solid red; }
 
 /* Sections
@@ -26,6 +24,10 @@ html {
  */
 body {
   margin: 0; }
+
+ul,
+li {
+  list-style: none; }
 
 /**
  * Render the `main` element consistently in IE.
@@ -313,11 +315,6 @@ template {
 [hidden] {
   display: none; }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px; }
-
 @font-face {
   font-family: "larsseit";
   src: url("../fonts/larsseit.woff2") format("woff2");
@@ -326,128 +323,152 @@ template {
   font-weight: normal;
   font-display: swap; }
 
+body {
+  font-family: "larsseit", sans-serif;
+  font-size: 24px;
+  color: #fff; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
 .header {
-  background: linear-gradient(to right, #F4F9E2 50%, #fff);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  padding-bottom: 85px; }
-  .header__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 0 185px; }
-  .header__logo {
-    font-size: 24px;
-    line-height: 27px;
-    color: #62D0DF; }
+  height: 100vh;
+  background-color: #F4F9E2; }
   .header__content {
-    width: 478px; }
+    min-height: calc(100vh - 86px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
   .header__title {
     font-size: 48px;
-    line-height: 53px;
-    letter-spacing: -0.035em;
-    margin: 40px 0 80px; }
+    line-height: 1.1;
+    max-width: 484px;
+    width: 100%;
+    color: #22356F;
+    margin: 50px 0 75px; }
   .header__text {
-    font-size: 24px;
-    line-height: 42px;
-    margin-bottom: 60px; }
-  .header__btn-first, .header__btn-second {
+    max-width: 472px;
+    line-height: 1.1;
+    width: 100%;
+    color: #22356F;
+    margin-bottom: 65px; }
+  .header__btn {
+    background-color: #F9B640;
+    display: inline;
     font-size: 16px;
-    line-height: 23px;
-    background: #F9B640;
-    width: 150px;
-    height: 50px;
-    color: #fff; }
-  .header__btn-second {
+    line-height: 1.4;
+    padding: 10px 30px;
+    letter-spacing: 0.1em; }
+    .header__btn:not(:last-child) {
+      margin-right: 38px; }
+  .header__btn--transparent {
     color: #FAB63E;
-    background: transparent; }
+    background-color: transparent; }
 
-.menu__list {
+.menu {
   display: flex;
-  list-style: none; }
-
-.menu__item {
-  margin-right: 20px; }
-
-.menu__btn {
-  font-size: 14px;
-  line-height: 16px;
-  background: #62D0DF;
-  border-radius: 50px;
-  width: 150px;
-  height: 50px;
-  color: #fff;
-  position: relative; }
-  .menu__btn::after {
-    position: absolute;
-    content: "";
-    background-image: url("../images/header-img.png");
-    background-repeat: no-repeat;
-    width: 970px;
-    height: 875px;
-    left: 0;
-    top: 0; }
-
-.description {
-  background: #62D0DF; }
-  .description__inner {
+  justify-content: space-between;
+  padding-top: 28px; }
+  .menu__list {
     display: flex; }
-  .description__wrapper {
-    padding: 150px 0 90px;
-    margin-left: auto; }
-  .description__title {
-    font-size: 36px;
-    line-height: 27px;
-    color: #fff;
-    margin-bottom: 80px; }
-  .description__text {
-    font-size: 24px;
-    line-height: 35px;
-    width: 555px;
+  .menu__item:not(:last-child) {
+    margin-right: 27px; }
+  .menu__link {
+    font-size: 14px;
+    line-height: 2.2;
+    font-weight: 600;
+    color: #22356F; }
+    .menu__link:hover {
+      border-bottom: 1px solid #22356F; }
+  .menu__btn {
+    font-size: 14px;
+    padding: 20px 30px;
+    background-color: #62D0DF;
+    border-radius: 50px;
     color: #fff; }
-  .description__text span {
-    font-size: 20px;
-    line-height: 30px;
-    color: #fff; }
-  .description__box {
+
+.info {
+  background-color: #62D0DF; }
+  .info__inner {
+    display: flex; }
+  .info__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 178px; }
+  .info__title {
+    margin-bottom: 75px; }
+  .info__text {
+    max-width: 555px; }
+  .info__text span {
+    font-size: 20px; }
+  .info__img {
     margin-left: auto; }
 
-.about__inner {
-  padding: 150px 0 120px;
-  display: flex;
-  justify-content: center; }
+.about {
+  color: #22356F; }
+  .about__inner {
+    padding: 156px 0 24px; }
+  .about__box {
+    display: flex;
+    justify-content: center; }
+  .about__title {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-right: auto; }
+  .about__text {
+    line-height: 1.4;
+    max-width: 592px;
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 70px; }
+  .about__slogan {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.1;
+    color: rgba(34, 53, 111, 0.5);
+    letter-spacing: 0.06em; }
 
-.about__title {
-  font-size: 16px;
-  line-height: 23px;
-  width: 90px;
-  letter-spacing: 0.06em; }
-
-.about__text {
-  font-size: 24px;
-  line-height: 34px;
-  width: 590px;
-  letter-spacing: 0.005em;
-  font-weight: 700; }
+.events {
+  padding-bottom: 123px; }
+  .events__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 355px);
+    grid-auto-rows: minmax(360px, auto); }
+  .events__item {
+    text-align: center;
+    padding-top: 95px; }
+    .events__item:first-child {
+      background-color: #FFE2DE; }
+    .events__item:nth-child(2) {
+      background-color: #C4E769; }
+    .events__item:nth-child(3) {
+      background-color: #62D0DF; }
+    .events__item:last-child {
+      background-color: #0052C1; }
+  .events__title {
+    font-size: 32px;
+    line-height: 1;
+    border-top: 1px solid #fff;
+    padding: 23px 0 0 30px;
+    max-width: 220px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative; }
+    .events__title::before {
+      position: absolute;
+      content: "";
+      background-color: #E9B730;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      left: 0;
+      top: 30px; }
 
 .types__inner {
   display: grid;
-  grid-template-columns: repeat(4, 422px);
-  grid-template-rows: 360px;
-  margin-bottom: 120px; }
-
-.types__item-1 {
-  background: #FFE2DE; }
-
-.types__item-2 {
-  background: #C4E769; }
-
-.types__item-3 {
-  background: #62D0DF; }
-
-.types__item-4 {
-  background: #0052C1; }
+  grid-template-columns: repeat(3, 480px); }
 
 /*# sourceMappingURL=style.min.css.map */

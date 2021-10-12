@@ -17,8 +17,6 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #22356F;
-  font-family: "larsseit";
   border: 1px solid red;
 }
 
@@ -31,6 +29,11 @@ html {
 
 body {
   margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 /**
