@@ -2,6 +2,51 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(3, 480px);
-
+    grid-template-rows: repeat(2, 480px);
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    padding-top: 126px;
+    &:first-child {
+      background-color: #22356F;
+    }
+    &:nth-child(2) {
+      background-color: #0052C1;
+    }
+    &:nth-child(3) {
+      background-image: url("../../images/nutrition.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+    }
+    &:nth-child(4) {
+      background-color: #62D0DF;
+    }
+    &:nth-child(5) {
+      background-color: #DEE1FF;
+    }
+    &:last-child {
+      background-color: #8F00FF;
+    }
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 1.1;
+    max-width: 157px;
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 36px;
+    border-top: 1px solid #fff;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background-color: #E9B730;
+      border-radius: 50%;
+    }
   }
 }

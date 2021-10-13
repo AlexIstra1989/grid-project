@@ -362,7 +362,7 @@ template {
 }
 
 body {
-    font-family: "larsseit";
+    font-family: "larsseit", sans-serif;
     font-size: 24px;
     color: #fff;
 }
@@ -405,10 +405,22 @@ body {
     margin-bottom: 65px;
 }
 
-.header__link {
+.header__btn {
     background-color: #F9B640;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: inline;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 10px 30px;
+    letter-spacing: 0.1em;
+}
+
+.header__btn:not(:last-child) {
+    margin-right: 38px;
+}
+
+.header__btn--transparent {
+    color: #FAB63E;
+    background-color: transparent;
 }
 
 .menu {
@@ -449,4 +461,131 @@ body {
 
 .info {
     background-color: #62D0DF;
+}
+
+.info__inner {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.info__box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 178px;
+}
+
+.info__title {
+    margin-bottom: 75px;
+}
+
+.info__text {
+    max-width: 555px;
+}
+
+.info__text span {
+    font-size: 20px;
+}
+
+.info__img {
+    margin-left: auto;
+}
+
+.about {
+    color: #22356F;
+}
+
+.about__inner {
+    padding: 156px 0 24px;
+}
+
+.about__box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.about__title {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-right: auto;
+}
+
+.about__text {
+    line-height: 1.4;
+    max-width: 592px;
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.about__slogan {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.1;
+    color: rgba(34, 53, 111, 0.5);
+    letter-spacing: 0.06em;
+}
+
+.events {
+    padding-bottom: 123px;
+}
+
+.events__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 355px);
+    grid-auto-rows: minmax(360px, auto);
+}
+
+.events__item {
+    text-align: center;
+    padding-top: 95px;
+}
+
+.events__item:first-child {
+    background-color: #FFE2DE;
+}
+
+.events__item:nth-child(2) {
+    background-color: #C4E769;
+}
+
+.events__item:nth-child(3) {
+    background-color: #62D0DF;
+}
+
+.events__item:last-child {
+    background-color: #0052C1;
+}
+
+.events__title {
+    font-size: 32px;
+    line-height: 1;
+    border-top: 1px solid #fff;
+    padding: 23px 0 0 30px;
+    max-width: 220px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+.events__title::before {
+    position: absolute;
+    content: "";
+    background-color: #E9B730;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 30px;
+}
+
+.types__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 480px);
+    grid-template-rows: 480px;
 }
