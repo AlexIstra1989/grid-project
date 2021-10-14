@@ -15,11 +15,10 @@
       background-color: #0052C1;
     }
     &:nth-child(3) {
-      background-image: url("../../images/nutrition.jpg");
+      background-color: url("assets/images/nutrition.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      z-index: 2;
     }
     &:nth-child(4) {
       background-color: #62D0DF;
@@ -34,11 +33,11 @@
   &__title {
     font-size: 32px;
     line-height: 1.1;
-    max-width: 157px;
+    max-width: 340px;
     width: 100%;
     position: relative;
     padding-top: 30px;
-    padding-left: 36px;
+    padding: 30px 190px 0 33px;
     border-top: 1px solid #fff;
     &::before {
       position: absolute;
@@ -47,6 +46,8 @@
       height: 12px;
       background-color: #E9B730;
       border-radius: 50%;
+      left: 0;
+      top: 40px;
     }
   }
 }

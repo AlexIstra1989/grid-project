@@ -481,11 +481,10 @@ body {
   .types__item:nth-child(2) {
     background-color: #0052C1; }
   .types__item:nth-child(3) {
-    background-image: url("../../images/nutrition.jpg");
+    background-color: url("assets/images/nutrition.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 2; }
+    background-size: cover; }
   .types__item:nth-child(4) {
     background-color: #62D0DF; }
   .types__item:nth-child(5) {
@@ -496,11 +495,11 @@ body {
 .types__title {
   font-size: 32px;
   line-height: 1.1;
-  max-width: 157px;
+  max-width: 340px;
   width: 100%;
   position: relative;
   padding-top: 30px;
-  padding-left: 36px;
+  padding: 30px 190px 0 33px;
   border-top: 1px solid #fff; }
   .types__title::before {
     position: absolute;
@@ -508,6 +507,31 @@ body {
     width: 12px;
     height: 12px;
     background-color: #E9B730;
-    border-radius: 50%; }
+    border-radius: 50%;
+    left: 0;
+    top: 40px; }
+
+.training__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 480px);
+  grid-template-rows: minmax(240px, auto); }
+
+.training__item {
+  align-self: center;
+  margin: 0 auto; }
+
+.training__title {
+  font-size: 28px;
+  line-height: 1.1;
+  color: #22356F;
+  margin-bottom: 28px; }
+
+.training__text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: rgba(34, 53, 111, 0.5);
+  max-width: 298px;
+  width: 100%; }
 
 /*# sourceMappingURL=style.min.css.map */

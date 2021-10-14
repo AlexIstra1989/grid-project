@@ -1,0 +1,25 @@
+.training {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 480px);
+    grid-template-rows: minmax(240px, auto);
+  }
+  &__item {
+    align-self: center;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 28px;
+    line-height: 1.1;
+    color: $accent-color;
+    margin-bottom: 28px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: -0.03em;
+      color: rgba(34, 53, 111, 0.5);
+      max-width: 298px;
+      width: 100%;
+  }
+}  
