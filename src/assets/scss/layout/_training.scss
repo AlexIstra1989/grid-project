@@ -2,11 +2,13 @@
   &__inner {
     display: grid;
     grid-template-columns: repeat(3, 480px);
-    grid-template-rows: minmax(240px, auto);
+    grid-template-rows: repeat(2, 260px);
   }
   &__item {
     align-self: center;
     margin: 0 auto;
+    max-width: 298px;
+      width: 100%;
   }
   &__title {
     font-size: 28px;
@@ -19,7 +21,6 @@
       line-height: 1.5;
       letter-spacing: -0.03em;
       color: rgba(34, 53, 111, 0.5);
-      max-width: 298px;
-      width: 100%;
+      
   }
 }  

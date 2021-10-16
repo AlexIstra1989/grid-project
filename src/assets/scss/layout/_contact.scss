@@ -1,0 +1,41 @@
+.contact {
+  &__inner {
+    display: flex;
+    background-color: $accent-color;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 579px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+  }
+  &__slogan {
+    font-size: 64px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    margin-bottom: -75px;
+  }
+  &__text {
+    font-size: 36px;
+    line-height: 1.4;
+    letter-spacing: -0.005em;
+    margin-bottom: -85px;
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: #62D0DF;
+  }
+  
+
+
+
+}
