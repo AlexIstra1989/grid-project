@@ -1,3 +1,23 @@
 .footer {
+  &__inner {
+
+  }
+  &__box {
+
+  }
+  &__item {
+
+  }
+  &__item-title {
+    font-size: 14px;
+    line-height: 1.2; 
+    letter-spacing: -0.006em;
+    color: $accent-color;
+  }
+  &__item-text,
+  &__location,
+  &__list-item, 
+  &__phone {
   
+  }
 }
