@@ -2,6 +2,30 @@
   display: flex;
   justify-content: space-between;
   padding-top: 28px;
+  &__burger {
+    display: none;
+    width: 44px;
+    height: 44px;   
+    border-radius: 3px;
+  }
+  &__line {
+    display: block;
+    background-color: #fff;
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+    position: relative;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #fff;
+      width: 30px;
+      height: 2px;
+      left: 0;
+      top: -10px;
+    }
+  }
   &__list {
     display: flex;
   }
