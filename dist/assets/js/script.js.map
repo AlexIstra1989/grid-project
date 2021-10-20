@@ -1,1 +1,1 @@
-{"version":3,"sources":["lib.js","main.js"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;ACHA;AACA;AACA;AACA","file":"script.js","sourcesContent":["function test(a, b) {\r\n    return a + b\r\n}\r\n","console.log(test(5, 2));\r\nconsole.log(test(2, 4));\r\nconsole.log(test(9, 1));\r\n"]}
+{"version":3,"sources":["lib.js","main.js"],"names":[],"mappings":"AAAA;ACAA;AACA;AACA;AACA;AACA;AACA","file":"script.js","sourcesContent":["","$(function() {\r\n  $('.menu__burger').on('click', function () {\r\n    $('.menu').toggleClass('menu--active');\r\n  })\r\n});\r\n"]}
