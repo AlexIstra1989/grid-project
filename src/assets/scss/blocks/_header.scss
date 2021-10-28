@@ -1,25 +1,20 @@
 .header {
-  height: 100vh;
   background-color: #F4F9E2;
   &__content {
-    min-height: calc(100vh - 85px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   @include flex (center, null, null, column);
+   min-height: calc(100vh - 84px);
+   padding: 165px 0 77px;
   }
   &__title {
-    font-size: 48px;
-    line-height: 1.1;
+   @include text (48px, 600, 1.1, -0.035em, $accentColor);
     max-width: 484px;
     width: 100%;
-    color: $accent-color;
     margin: 50px 0 75px;
   }
   &__text {
+   @include text (24px, 400, 1.1, null, $accentColor);
     max-width: 472px;
-    line-height: 1.1; 
     width: 100%;
-    color: $accent-color;
     margin-bottom: 65px;
   }
   &__btn {
@@ -34,7 +29,7 @@
     }
   }
   &__btn--transparent {
-    color: #FAB63E;
+    color: $linkColor;
     background-color: transparent;
   }
 }

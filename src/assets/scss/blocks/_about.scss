@@ -1,0 +1,18 @@
+.about { 
+  &__inner {
+    padding-top: 156px;
+  }
+  &__box {
+   @include flex (center, null, null, null);
+  }
+  &__title {
+   @include text (16px, 400, 1.4, 0.06em, $accentColor);
+    margin-right: auto;
+  }
+  &__text {
+   @include text (24px, 400, 1.4, 0.005em, $accentColor);
+    max-width: 592px;
+    width: 100%;
+    margin-right: auto;
+  }
+}

@@ -1,6 +1,5 @@
 .menu {
-  display: flex;
-  justify-content: space-between;
+ @include flex (space-between, null, null, null);
   padding-top: 28px;
   &__burger {
     display: none;
@@ -18,9 +17,7 @@
     position: relative;
     &::before,
     &::after {
-      position: absolute;
-      content: "";
-      display: block;
+      @include pseudo;
       background-color: #62D0DF;
       width: 30px;
       height: 2px;
@@ -40,10 +37,7 @@
     }
   }
   &__link {
-    font-size: 14px;
-    line-height: 2.2;
-    font-weight: 600;
-    color: $accent-color;
+   @include text (14px, 600, 2.2, null, $accentColor);
     &:hover {
       border-bottom: 1px solid #22356F;
     }
@@ -53,20 +47,6 @@
     padding: 20px 30px;
     background-color: #62D0DF;
     border-radius: 50px;
-    color: #fff;  
+    color: $secondaryColor;  
   }
-}
-
-&__burger--active .menu__line {
-  transition: transform 0.5s ease;
-  transform: rotate(45deg);
-}
-
-&__burger--active .menu__line::before {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-&__burger--active .menu__line::after {
-  opacity: 0;
 }

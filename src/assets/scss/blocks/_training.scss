@@ -1,0 +1,20 @@
+.training {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 260px);
+  }
+  &__item {
+    align-self: center;
+    margin: 0 auto;
+    max-width: 298px;
+    width: 100%;
+  }
+  &__title {
+   @include text (28px, 400, 1.1, -0.03em, $accentColor);
+    margin-bottom: 28px;
+    }
+  &__text {
+   @include text (16px, 400, 1.5, -0.03em, rgba(34, 53, 111, 0.5));
+  }
+}  

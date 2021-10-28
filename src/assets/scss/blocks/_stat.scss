@@ -1,0 +1,22 @@
+.stat {
+  &__inner {
+    display: flex;
+  }
+  &__box {
+   @include flex (space-around, null, null, column);
+    max-width: 675px;
+    margin: 0 auto;
+  }
+  &__title {
+   @include text (16px, 400, 1.3, 0.06em, $accentColor);
+  }
+  &__text {
+   @include text (36px, 500, 1.4, -0.01em, $accentColor);
+  }
+  &__text span {
+    color: #62D0DF;
+  }
+  &__link {
+   @include text (16px, 500, 1.4, 0.1em, $linkColor);
+  }
+}
