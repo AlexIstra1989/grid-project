@@ -26,9 +26,3 @@
 	flex-wrap: $flex-wrap;
 	flex-direction: $flex-direction;
 }
-
-@mixin border($border-width: null, $border-style: solid, $border-color: null) {
-	border-width: $border-width;
-	border-style: $border-style;
-	border-color: $border-color;
-}

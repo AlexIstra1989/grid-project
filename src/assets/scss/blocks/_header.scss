@@ -17,18 +17,26 @@
     width: 100%;
     margin-bottom: 65px;
   }
-  &__btn {
+  &__box {
+   @include flex (space-between, center, wrap);
+   max-width: 375px;
+   width: 100%;
+  }
+  &__link {
+   @include flex (center, center);
     background-color: #F9B640;
-    display: inline;
     font-size: 16px;
     line-height: 1.4;
-    padding: 10px 30px;
+    width: 150px;
+    height: 50px;
     letter-spacing: 0.1em;
-    &:not(:last-child) {
-      margin-right: 38px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    &:hover {
+     color: $secondaryColor;
+     background-color: rgba(249, 182, 64, 0.4);
     }
   }
-  &__btn--transparent {
+  &__link--transparent {
     color: $linkColor;
     background-color: transparent;
   }
