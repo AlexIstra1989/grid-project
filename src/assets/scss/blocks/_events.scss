@@ -28,7 +28,7 @@
   }
   &__item-title {
    @include text (32px, 400, 1, -0.006em, $secondaryColor);
-    border-top: 1px solid #fff;
+    border-top: 1px solid $secondaryColor;
     padding: 23px 0 0 30px;
     max-width: 220px;
     margin: 0 auto;

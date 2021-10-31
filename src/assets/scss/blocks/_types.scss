@@ -32,7 +32,7 @@
     width: 100%;
     position: relative;
     padding: 30px 190px 0 33px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid $secondaryColor;
     &::before {
       @include pseudo;
       width: 12px;
