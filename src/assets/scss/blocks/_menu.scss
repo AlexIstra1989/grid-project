@@ -34,7 +34,7 @@
   &__item {
     &:not(:last-child){
       margin-right: 27px;
-    }
+    } 
   }
   &__link {
    @include text (14px, 600, 2.2, null, $accentColor);
