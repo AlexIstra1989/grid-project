@@ -1,5 +1,5 @@
 @media (max-width: 1280px) {
- .types {
+ .services {
   &__title {
    font-size: 25px;
    max-width: 250px;
@@ -12,17 +12,14 @@
   &__inner {
    grid-template-rows: repeat(2, 302px);
   }
-
   &__box {
    grid-area: 1/1/span 1/span 2;
   }
-
   &__title {
    font-size: 30px;
    margin-bottom: 40px;
    text-align: center;
   }
-
   &__text {
    font-size: 20px;
    text-align: justify;
@@ -32,7 +29,6 @@
     font-size: 16px;
    }
   }
-
   &__box-image {
    grid-area: 2/1/span 1/span 2;
   }
@@ -57,7 +53,7 @@
   }
  }
 
- .types {
+ .services {
   &__inner {
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(3, 360px);
@@ -77,13 +73,31 @@
    font-size: 14px;
   }
  }
+
+ .contact {
+   &__inner {
+    grid-template-columns: repeat(2, 1fr);
+   }
+   &__box {
+    grid-area: 1/1/span 2/span 1; 
+   }
+   &__box-image {
+    grid-area: 1/2/span 2/span 1;
+   }
+ }
+
+ .footer {
+  &__item-title {
+   margin-bottom: 30px;
+  }
+ }
 }
 
 @media (max-width: 768px) {
  .header {
   &__content {
    padding: 90px 0 77px;
-   min-height: calc(100vh - 72px);
+   min-height: calc(100vh - 58px);
    .logo--content {
     display: none; 
    }
@@ -94,11 +108,15 @@
   }
  }
 
+ .logo {
+  z-index: 555;
+ }
+
  .menu {
   align-items: center;
-   &__list {
+  &__list {
     position: absolute;
-    background-color: #7792E0;
+    background-color: $linkColor;
     display: block;
     text-align: center;
     padding-top: 140px;
@@ -111,16 +129,29 @@
     transition: transform 0.5s ease;
     z-index: 1;
    }
-  //  .menu--active .menu__list {
-  //   transform: translateY(0);
-  // }
+   .menu--active
+   &__list {
+    transform: translateY(0);
+   }
    &__btn {
      display: none;
    }
    &__burger {
      display: block; 
      z-index: 2;
-   }    
+     background-color: transparent;
+   }  
+   &__item {
+    &:not(:last-child) {
+     margin-right: 0;
+    }
+   }
+   &__link {
+    color: $secondaryColor;
+    &:hover {
+     border-bottom: 1px solid $secondaryColor;
+   }
+   } 
   }
   
   .about {
@@ -148,7 +179,7 @@
    }
   }
 
-  .types {
+  .services {
    &__inner {
     grid-template-rows: repeat(3, 250px);
    }
@@ -157,12 +188,30 @@
    }
   }
 
-  .stat {
+  .blog {
    &__inner {
     grid-template-columns: repeat(2, 1fr);
    }
    &__text {
     font-size: 28px;
+   }
+  }
+
+  .contact {
+   &__title {
+    font-size: 55px;
+   }
+   &__text {
+    font-size: 28px;
+   }
+  }
+
+  .footer {
+   &__inner {
+    grid-template-columns: repeat(1, 1fr);
+   }
+   &__item {
+    padding: 30px 0;
    }
   }
 }
@@ -221,7 +270,7 @@
  }
 }
 
- .types {
+ .services {
   &__inner {
    grid-template-columns: repeat(1, 1fr);
    grid-template-rows: repeat(6, 180px);
@@ -249,7 +298,7 @@
   }
  }
 
- .stat {
+ .blog {
   &__inner {
    grid-template-columns: repeat(2, 1fr);
   }
@@ -264,14 +313,53 @@
    font-size: 20px;
   }
  }
+
+ .contact {
+  &__inner {
+   grid-template-columns: repeat(2, 1fr);
+  }
+  &__box {
+   grid-area: 1/1/span 1/span 2; 
+  }
+  &__box-image {
+   grid-area: 2/1/span 1/span 2;
+  }
+  &__title {
+   font-size: 35px;
+   margin-bottom: 0;
+  }
+  &__text {
+   font-size: 20px;
+   margin-bottom: 0;
+  }
+ }
+
+ .footer {
+  &__item-title,
+  &__item-text,
+  &__location,
+  &__list-item, 
+  &__phone {
+   font-size: 12px;
+  }
+  &__copyright {
+  padding: 30px 0;
+  text-align: center;
+  }
+  &__text {
+   font-size: 12px;
+   &::before {
+    width: 9px;
+    height: 9px;
+    top: 2px;
+    left: 28%;
+   }
+  }
+ }
 }
 
 @media (max-width: 376px) {
  .header {
-  &__content {
-   padding: 35px 0 35px;
-   min-height: calc(100vh - 72px);
-  }
    &__title {
     font-size: 30px;
    }
@@ -284,6 +372,26 @@
    &:not(:last-child) {
     margin-bottom: 30px;
    }
+  }
+ }
+}
+
+@media (max-height: 415px) and (orientation: landscape) {
+ .header {
+  &__content {
+  padding: 20px 0;
+  }
+  &__title {
+   font-size: 28px;
+   max-width: 484px;
+   width: 100%;
+   margin-bottom: 20px;
+  }
+  &__text {
+   font-size: 18px;
+   max-width: 472px;
+   width: 100%;
+   margin-bottom: 20px;
   }
  }
 }

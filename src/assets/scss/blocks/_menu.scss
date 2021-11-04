@@ -28,6 +28,21 @@
       top: 10px;
     }
   }
+  &__burger--active 
+  &__line::before {
+   top: 0;
+   transform: rotate(90deg);
+   z-index: 333;
+  }
+  .menu--active 
+  &__line { 
+   transition: transform 0.5s ease;
+   transform: rotate(45deg);
+  }
+  &__burger--active 
+  &__line::after {
+   opacity: 0;
+  }  
   &__list {
     display: flex;
   }
@@ -50,19 +65,3 @@
     color: $secondaryColor;  
   }
 }
-
-  //  &--active {
-  //   &__line { 
-  // transition: transform 0.5s ease;
-  // transform: rotate(45deg);
-  //   }
-  // }
-
-// .menu__burger--active .menu__line::before {
-//  top: 0;
-//  transform: rotate(90deg);
-// }
-
-// .menu__burger--active .menu__line::after {
-//  opacity: 0;
-// }

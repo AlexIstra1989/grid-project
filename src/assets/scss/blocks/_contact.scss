@@ -1,53 +1,25 @@
 .contact {
  background-color: $accentColor;
-  // &__inner {
-  //   display: flex;
-  // }
-  // &__box {
-  //  @include flex (space-around, null, null, column);
-  //   max-width: 579px;
-  //   width: 100%;
-  //   margin: 0 auto;
-  // }
-  // &__subtitle {
-  //  @include text (16px, 400, 1.3, 0.06em, $secondaryColor);
-  //   letter-spacing: 0.06em;
-  // }
-  // &__title {
-  //  @include text (64px, 400, 1.4, -0.01em, $secondaryColor);
-  //   letter-spacing: -0.01em;
-  //   margin-bottom: -75px;
-  // }
-  // &__text {
-  //  @include text (36px, 400, 1.4, -0.005em, $secondaryColor);
-  //   letter-spacing: -0.005em;
-  //   margin-bottom: -85px;
-  // }
-  // &__link {
-  //  @include text (16px, 400, 1.4, 0.1em, #62D0DF);
-  // }
-
   &__inner {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(2, 400px); 
  }
  &__box {
-  // @include flex (space-around, null, null, column);
-  //  max-width: 579px;
-  //  width: 100%;
-  //  margin: 0 auto;
   grid-area: 1/1/span 2/span 2; 
+  height: 100%;
   justify-self: center;
-  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  max-width: 580px;
+  padding: 0 10px;
  }
  &__subtitle {
   @include text (16px, 400, 1.3, 0.06em, $secondaryColor);
-   letter-spacing: 0.06em;
  }
  &__title {
   @include text (64px, 400, 1.4, -0.01em, $secondaryColor);
-   letter-spacing: -0.01em;
    margin-bottom: -75px;
  }
  &__text {

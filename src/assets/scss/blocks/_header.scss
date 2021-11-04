@@ -3,7 +3,7 @@
   &__content {
    @include flex (center, null, null, column);
    min-height: calc(100vh - 84px);
-   padding: 165px 0 77px;
+   padding: 120px 0 77px;
   }
   &__title {
    @include text (48px, 600, 1.1, -0.035em, $accentColor);

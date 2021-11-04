@@ -1,4 +1,4 @@
-.stat {
+.blog {
  &__inner {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
@@ -10,7 +10,6 @@
   background-position: center;
   background-size: cover;
   grid-area: 1/1/span 2/span 1;
-  margin-right: 30px;
  }
  &__box {
   grid-area: 1/2/span 2/span 2;
